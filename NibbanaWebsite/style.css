@@ -55,3 +55,21 @@ body {
     color: #4CAF50;
     margin-right: 25px;
 }
+
+/* Styling Profile Container */
+.profileContainer {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Initially hide the Drop Down */
+.dropDown {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.profileContainer.active .dropDown {
+    display: block;
+}

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nibbana</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="./script.js"></script>
 </head>
 
 <body>
@@ -38,15 +38,19 @@
                         Contact Us
                     </a>
                 </li>
-            </ul>
 
-            <!-- <div class="userDropDown">
-                <i class="fa-solid fa-user"></i>
-                <select>
-                    <option value="#">Sign In</option>
-                    <option value="#">Sign Up</option>
-                </select>
-            </div> -->
+            </ul>
+            <div class="profileContainer" onmouseenter="showDropDown()" onmouseleave="hideDropDown()">
+                <img src="./assets/UserProfileIcon/UserProfileIcon.png" alt="Profile Img" class="profileImg"
+                    height="38">
+                <!-- DropDown Menu 👇 -->
+                <div class="dropDown">
+                    <select>
+                        <option value="signIn">Sign In</option>
+                        <option value="signUp">Sign Up</option>
+                    </select>
+                </div>
+            </div>
         </div>
     </nav>
 </body>
