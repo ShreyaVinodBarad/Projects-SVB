@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    /* 
+    If you want to center content vertically in the whole viewport, you need to ensure the container has the full viewport height. 
+    */
+    justify-content: center;
+    background-color: lightblue;
+}
+
+.card {
+    height: 270px;
+    width: 430px;
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 25px;
+    background: url(./Background.png);
+}
+
+.card .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 60px;
+}
+
+.header .logo h5 {
+    font-size: 1.2em;
+    margin-left: 12px;
+}
+
+.header img {
+    width: 60px;
+}
+
+.card-details .card-number {
+    margin-top: 60px;
+}
+
+.card-details .card-number h5 {
+    font-size: 1em;
+}
+
+.card-details .card-number .number {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+.card-details .card-name {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card-details .card-name h5 {
+    font-size: 1em;
+}
+
+.card-details .card-name .date {
+    font-size: 1.3em;
+}
