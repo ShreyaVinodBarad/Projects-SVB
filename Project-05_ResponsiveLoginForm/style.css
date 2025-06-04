@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: cadetblue
+}
+
+.login-form {
+    height: 330px;
+    width: 360px;
+    /* border: 2px solid black; */
+    background-color: white;
+    border-radius: 15px;
+}
+
+.login-form .heading {
+    font-size: 2em;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    background-color: lightseagreen;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.login-form form {
+    padding: 10px 20px;
+}
+
+.login-form form .row {
+    margin: 10px;
+    position: relative;
+}
+
+.login-form form .row input {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    padding-left: 60px;
+    border: 1px solid lightgrey;
+    outline: none;
+    border-radius: 10px;
+}
+
+.login-form form .row input:focus {
+    border-color: lightseagreen;
+    box-shadow: inset 0 0 2px 2px lightseagreen;
+}
+
+.login-form form .row i {
+    position: absolute;
+    width: 45px;
+    background-color: lightseagreen;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 10px 0 0 10px;
+}
+
+.login-form form .forgot-pass {
+    margin: 10px;
+}
+
+.login-form form .forgot-pass a {
+    text-decoration: none;
+    font-size: 1em;
+    color: lightseagreen;
+}
+
+.login-form form .button input {
+    padding-left: 0px;
+    background-color: lightseagreen;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.login-form form .signup-link {
+    text-align: center;
+    font-size: 1em;
+}
+
+.login-form form .signup-link a {
+    text-decoration: none;
+    font-size: 1em;
+    color: lightseagreen;
+    margin-left: 5px;
+    font-weight: bold;
+}
