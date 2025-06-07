@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background-color: #1b1b1b;
+    width: 100%;
+    position: fixed;
+    z-index: 12;
+}
+
+nav .nav-bar {
+    max-width: 1250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 13px 20px;
+}
+
+.nav-bar .web-name a {
+    text-decoration: none;
+    font-size: 2.2em;
+    color: white;
+}
+
+.nav-bar ul {
+    display: inline-flex;
+}
+
+.nav-bar ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    font-weight: 500;
+    border-radius: 7px;
+    transition: all 0.5s ease;
+}
+
+.nav-bar ul li a:hover {
+    color: #1b1b1b;
+    background-color: white;
+}
+
+.img {
+    background: url(./BgImg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    position: relative;
+}
+
+.img::before {
+    content: "";
+    /* An empty string ("") means no text content, but the pseudo-element will still exist and can be styled. 👆 */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 15px;
+    /* border: 2px solid white; */
+    text-align: center;
+    transform: translate(-50%, -50%);
+    /* Centers content 👆*/
+}
+
+.content .title {
+    font-size: 2.3em;
+    color: white;
+    font-weight: 500;
+}
+
+.content .btns {
+    margin-top: 17px;
+}
+
+.content .btns button {
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 13px;
+    border: 2px solid #fff;
+    transition: all 0.5s ease;
+}
+
+.content .btns button:first-child {
+    background: none;
+    color: white;
+}
+
+.content .btns button:first-child:hover {
+    background-color: white;
+    color: #1b1b1b;
+}
