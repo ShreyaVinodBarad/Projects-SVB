@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c8e8e9;
+}
+
+.container {
+    width: 80%;
+    background-color: white;
+    padding: 40px;
+}
+
+.container .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .content .contactInfo {
+    width: 25%;
+    height: 100%;
+}
+
+.container .content .details {
+    margin: 16px;
+    text-align: center;
+}
+
+.container .content .details i {
+    font-size: 1.5em;
+    color: #3e2096;
+}
+
+.container .content .details .topic {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.container .content .details .text-1,
+.text-2 {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.container .content .contactForm {
+    width: 75%;
+    margin-left: 40px;
+    padding-left: 40px;
+    border-left: 2px solid gray;
+}
+
+.content .contactForm .topic-text {
+    font-size: 1.8em;
+    color: #3e2096;
+    font-weight: 600;
+}
+
+.content .contactForm p {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.content .contactForm form .input-box {
+    height: 50px;
+    width: 100%;
+    margin: 14px 0;
+}
+
+.content .contactForm form .input-box input,
+.content .contactForm .message-box textarea {
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: #f0f1f8;
+    font-size: 1.2em;
+    border-radius: 6px;
+    padding: 0 16px;
+}
+
+.content .contactForm .message-box {
+    min-height: 110px;
+}
+
+.content .contactForm .button input[type="button"] {
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 1.2em;
+    font-weight: 500;
+    background-color: #3e2096;
+    border: none;
+}
+
+
+.content .contactForm .button input[type="button"]:hover {
+    background-color: #5029bc;
+}
