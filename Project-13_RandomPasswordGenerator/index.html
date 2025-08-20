@@ -18,12 +18,13 @@
                 </span>
             </h1>
             <div class="input-group my-3">
-                <input type="text" class="form-control" placeholder="Password" />
+                <input type="text" class="form-control" id="password" placeholder="Password" />
                 <span class="input-group-text">
-                    <img src="./Assests/CopyIcon.png" alt="CopyIcon" width="40px" height="40px">
+                    <img src="./Assests/CopyIcon.png" alt="CopyIcon" width="40px" height="40px"
+                        onclick="passwordCopy()">
                 </span>
             </div>
-            <button type="button" class="btn btn-success my-2">
+            <button type="button" class="btn btn-success my-2" onclick="generatePassword()">
                 <img src="./Assests/GenerateIcon.png" alt="GenerateIcon" width="30px" height="30px">
                 Generate Password
             </button>
