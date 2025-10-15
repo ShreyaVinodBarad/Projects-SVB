@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header alert alert-primary text-center">
+                        <h2>Admin Panel<br> Manage Library Items</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="title" placeholder=""
+                                        value="Rich Dad Poor Dad">
+                                    <label for="title">Enter Item Title...</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="author" placeholder=""
+                                        value="Robert Kiyosaki and Sharon Lechter">
+                                    <label for="author">Enter Author/Creator...</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" id="stock" placeholder="" value="5">
+                                    <label for="stock">Enter Stock/Copies...</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="image" placeholder=""
+                                        value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-gVUgOqZ7aabPqsUXL5_OogJNzHBoCEUglQ&s">
+                                    <label for="image">Enter Image URL...</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <select class="form-select" id="media">
+                                    <option value="" selected>
+                                        Select Media Type
+                                    </option>
+                                    <option value="Fiction(Book)" selected>
+                                        Fiction(Book)
+                                    </option>
+                                    <option value="Non-Fiction(Book)">
+                                        Non-Fiction(Book)
+                                    </option>
+                                    <option value="DVD/Movie">DVD/Movie</option>
+                                    <option value="AudioBook">AudioBook</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-12">
+                                <button type="button" class="btn btn-primary mt-3 w-100" id="addItemBtn">
+                                    Add Item to Library
+                                </button>
+                                <button type="button" class="btn btn-success mt-3 w-100 d-none" id="updateItemBtn">
+                                    Update Item
+                                </button>
+                                <button type="button" class="btn btn-danger mt-3 w-100 d-none" id="cancleUpdateBtn">
+                                    Cancle Update Item
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <select class="form-select my-3" id="productLimit">
+                    <!-- <option selected value="">No. of Products Per Page</option> -->
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+
+                <table class="table table-responsive table-bordered my-3">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Title</th>
+                            <th>Author/Creator</th>
+                            <th>Image</th>
+                            <th>Media Type</th>
+                            <th>Total Stock</th>
+                            <th>Available</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="root">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./app.js" type="module"></script>
+</body>
+
+</html>
